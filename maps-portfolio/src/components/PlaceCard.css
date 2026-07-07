@@ -1,0 +1,33 @@
+.place-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.place-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow);
+  border-color: var(--accent);
+}
+.place-title { font-size: 1.1rem; color: var(--text-primary); }
+.place-address { font-size: 0.85rem; color: var(--text-secondary); }
+.place-coords { font-size: 0.8rem; color: var(--accent); font-weight: bold; }
+.place-card-actions { display: flex; gap: 10px; margin-top: 5px; }
+.btn-fav, .btn-details {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.btn-fav.active { background: #fce8e6; color: #c5221f; border-color: #fad2cf; }
+.btn-details:hover { background: var(--accent); color: white; border-color: var(--accent); }

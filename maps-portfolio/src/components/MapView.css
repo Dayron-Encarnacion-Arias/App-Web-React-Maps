@@ -1,0 +1,15 @@
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+.leaflet-map-container {
+  width: 100%;
+  height: 100%;
+}
+.map-popup-content {
+  color: #202124;
+}
